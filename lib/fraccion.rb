@@ -57,7 +57,7 @@ class Fraccion
        return Fraccion.new(na,nb)
     end
     
-    def absoluto()
+    def absoluto
         return Fraccion.new(@num.abs, @denom.abs)
     end
     
