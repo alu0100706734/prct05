@@ -3,10 +3,8 @@ class Fraccion
     def initialize (num, denom)
          @num = num
          @denom = denom
-#        raise TypeError, "El denominador no puede ser cero" if denom.eql? 0
- #       d = gcd(num,denom)
-  #      @num = num/d
-   #     @denom = denom/d
+         raise TypeError, "El denominador no puede ser cero" if denom.eql? 0
+
     end
 
     def gcd(num, denom)
@@ -18,8 +16,8 @@ class Fraccion
             gcd = k
         end
         k += 1
-    end
-    return gcd
+        end
+        return gcd
     end
     
     def mcm(a, b)
